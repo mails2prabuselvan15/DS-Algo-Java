@@ -10,31 +10,26 @@ public class TransposeMatrix {
 		
 		int[][] transpose = transpose(arr);
 		
-		System.out.println("After Transposing matrix");
-		for (int i=0; i<transpose.length; i++) {
+		for(int i=0; i<transpose.length; i++) {
 			for (int j=0; j<transpose[i].length; j++) {
-				System.out.print(transpose[i][j] + " " );
+				System.out.println(transpose[i][j]);
 			}
-			System.out.println();
 		}
 
 	}
 	
-	public static int [][] transpose(int arr[][]) {
-		int row = arr.length;
-		int col=arr[0].length;
+	public static int [][] transpose(int A[][]) {
 		
-		int [][]newarr= new int[col][row];
-		
-		for (int i=0 ;i <arr.length; i++) {
-			System.out.println(" rows column length  " +arr[i].length);
-			for (int j=0 ;j<arr[i].length; j++) {
-//				System.out.println(arr[j][j]);
-				newarr[i][j]= arr[j][i];
-				System.out.println("new array "+ newarr[i][j]);
+		int row= A.length;
+		int col = A[0].length;
+		int newArr[][] = new int[col][row];
+		for (int i=0; i< col; i++) {
+			for (int j=0; j<row; j++) {
+				System.out.print(A[j][i] +" ");
+				newArr[i][j] =A[j][i];
 			}
-		}		
-		return newarr;
+			System.out.println();
+		}
+	return newArr;	
 	}
-
 }
