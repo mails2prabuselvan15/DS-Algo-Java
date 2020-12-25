@@ -8,7 +8,11 @@ public class ThirdMaxNum {
 		// TODO Auto-generated method stub
 //		int arr[]= {3, 2, 1};
 //		int arr[]= {1,2};
-		int arr[]= {2, 2, 3, 1};
+//		int arr[]= {2, 2, 3, 1};
+		
+//		This is pending yet to complete
+		
+		int arr[]= {10,40,20,80};
 
 		int firstMax = firstMax(arr);
 		System.out.println(firstMax);

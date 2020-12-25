@@ -10,7 +10,7 @@ public class RemoveNthNodefromEnd {
 		this.next=null;
 	}
 
-	@SuppressWarnings("null")
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
