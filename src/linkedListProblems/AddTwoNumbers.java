@@ -69,7 +69,6 @@ public class AddTwoNumbers {
 			
 			newNode.next=prev;
 			prev=newNode;
-			
 			if (temp1!=null) temp1=temp1.next;
 			if (temp2!=null) temp2=temp2.next;
 		}
