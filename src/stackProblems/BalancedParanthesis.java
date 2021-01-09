@@ -6,16 +6,17 @@ public class BalancedParanthesis {
 
 	public static void main(String[] args) {
 		
-		String str ="{[]}";
+//		String str ="{[]}";
+		String str = "[";
 		boolean val = isValid(str);
 		System.out.println("out put is "+val);
 
 	}
 	
-	public static boolean isValid(String str) {
+	public static boolean isValid(String s) {
 		Stack<Character> stk=new Stack<Character>();
-		for (int i=0; i<str.length();i++) {
-			char  charAt = str.charAt(i);
+		for (int i=0; i<s.length();i++) {
+			char  charAt = s.charAt(i);
 			System.out.println(charAt);
 			if(charAt=='{' || charAt=='[') {
 				stk.push(charAt);
@@ -24,18 +25,16 @@ public class BalancedParanthesis {
 					return false;
 				} else if(isMatching(stk.peek(),charAt)==false) {
 					 return false;
-				} else {
+				}else {
 					stk.pop();
 				}
 			}
-		}	
-		return true;
+		}
+		if (stk.isEmpty()) return true;
+		else return false;
 	}
 
 	public static boolean isMatching(char ch1, char ch2) {
-		
-		System.out.println("Char 1 is "+ch1);
-		System.out.println("Char 2 is "+ch2);
-		return (ch1=='{' && ch2=='}') || (ch1=='[' && ch2==']'); 
+		return (ch1=='{' && ch2=='}') || (ch1=='[' && ch2==']' || (ch1=='{' && ch2=='}') || (ch1=='(' && ch2==')')); 
 	}
 }

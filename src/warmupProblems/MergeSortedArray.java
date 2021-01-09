@@ -3,7 +3,6 @@ package warmupProblems;
 public class MergeSortedArray {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		int nums1[]= {1,2,3,0,0,0};
 		int nums2[]= {2,5,6};

@@ -3,7 +3,6 @@ package warmupProblems;
 public class MaximumDiff {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 //		int arr[]= {2, 3,10,6,4,8,1};
 		

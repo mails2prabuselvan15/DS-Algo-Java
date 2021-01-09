@@ -2,10 +2,9 @@ package warmupProblems;
 
 import java.util.Arrays;
 
-public class ArrayDuplicates {
+public class ArrayDuplicatesHard {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		int arr[] = {4,3,2,7,8,2,3,1};
 		ArrayDup(arr);

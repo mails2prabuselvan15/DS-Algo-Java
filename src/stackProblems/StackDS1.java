@@ -5,8 +5,8 @@ import java.util.Stack;
 public class StackDS1 {
 
 //	public StackDS1() {
-		 Stack<Integer> mainstk = new Stack<Integer>();
-		 Stack<Integer> auxStack= new Stack<Integer>();	
+		  static Stack<Integer> mainstk = new Stack<Integer>();
+		 static Stack<Integer> auxStack= new Stack<Integer>();	
 //	}
 
 	public static void main(String[] args) {
@@ -23,7 +23,8 @@ public class StackDS1 {
 		System.out.println("min value is "+min);
 	}
 
-	public  void push (int num) {
+	public   void push (int num) {
+		StackDS1 d1= new StackDS1();
 		if(mainstk.isEmpty() && auxStack.isEmpty()) {
 			mainstk.push(num);
 			auxStack.push(num);
