@@ -11,9 +11,9 @@ public class Test {
 //		int a = 0;
 //		int b=0;
 //		System.out.println( a ^ b);
-		int a=10;
-		int b=20;
-		String sym = "+";
+//		int a=10;
+//		int b=20;
+//		String sym = "+";
 		
 //		char charAt = sym.charAt(0);
 //		char forDigit = Character.forDigit(charAt,0);
@@ -23,7 +23,7 @@ public class Test {
 //		System.out.println(c);
 		
 		
-		System.out.println(10 + (sym) + 20);
+//		System.out.println(10 + (sym) + 20);
 		
 		
 		
@@ -53,18 +53,21 @@ public class Test {
 //		}
 		
 		
-		int arr[]= new int[5];
+//		int arr[]= new int[5];
+//		
+//		arr[0]= 100;
+//		arr[1]= 1;
+//		arr[2]= 2;
+//		arr[3]= 3;
+//		
+//		arr= new int[2];
+//		
+//		System.out.println("arr[0] "+arr[0]);
 		
-		arr[0]= 100;
-		arr[1]= 1;
-		arr[2]= 2;
-		arr[3]= 3;
+		double temp = 0;
 		
-		arr= new int[2];
-		
-		System.out.println("arr[0] "+arr[0]);
-		
-		
+		temp= (double) (10.0) /(double) (4.0);
+		System.out.println("temp is "+ temp);
 		
 	}
 

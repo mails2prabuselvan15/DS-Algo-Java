@@ -39,7 +39,9 @@ public class Node {
 		
 //		postorder(A);
 		
-	 System.out.println(treecount(A));	
+//	 System.out.println(sizeofTree(A));
+		
+		System.out.println(heightofTree(A));
 		
 	
 	}
@@ -71,16 +73,25 @@ public class Node {
 		System.out.println(root.data);
 	}
 	
- 
-	public static int treecount(Node root) {
+	public static int heightofTree(Node root) {
+	if(root==null ) return 0; 
+	return Math.max(heightofTree(root.left), heightofTree(root.right)+1);
+
+	}
+	
+	
+	public static int sizeofTree(Node root) {
 		
 		if (root==null) return 0;
 		
-		int left  =treecount(root.left);
-		int right = treecount(root.right);
+		int left  =sizeofTree(root.left);
+		int right = sizeofTree(root.right);
 	
 		int count=  1 +left+right;
 		
 		return count;
 	}
+	
+
+	
  }
